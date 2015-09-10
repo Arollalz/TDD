@@ -10,7 +10,7 @@ public class FrancTest {
     public void testFrancMultiplication()  {
         Franc five = Money.franc(5);
 
-        assertEquals(five.times(2), new Franc(10));
-        assertEquals(five.times(3), new Franc(15));
+        assertEquals(five.times(2), Money.franc(10));
+        assertEquals(five.times(3), Money.franc(15));
     }
 }
