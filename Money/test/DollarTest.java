@@ -7,9 +7,9 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by zhenliu on 9/10/15.
  */
-public class testMultiplication {
+public class DollarTest {
     @Test
-    public void testMultiplication() throws Exception {
+    public void testMultiplication()  {
         Dollar five = new Dollar(5);
 
         assertEquals(five.times(2), new Dollar(10));
@@ -17,7 +17,7 @@ public class testMultiplication {
     }
 
     @Test
-    public void testEquality() throws Exception {
+    public void testEquality() {
         assertTrue(new Dollar(5).equals(new Dollar(5)));
         assertFalse(new Dollar(5).equals(new Dollar(6)));
     }
