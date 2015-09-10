@@ -3,14 +3,14 @@
  */
 public class Dollar extends Money {
     public Dollar(int amount) {
-        this.setAmount(amount);
-    }
-
-    public Dollar times(int multiplier){
-        return new Dollar(this.getAmount() * multiplier);
+        super(amount);
     }
 
     public int getAmount() {
         return amount;
+    }
+
+    public Dollar times(int multiplier){
+        return new Dollar(this.getAmount() * multiplier);
     }
 }

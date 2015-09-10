@@ -10,7 +10,7 @@ import static org.junit.Assert.assertTrue;
 public class DollarTest {
     @Test
     public void testMultiplication()  {
-        Dollar five = new Dollar(5);
+        Dollar five = Money.dollar(5);
 
         assertEquals(five.times(2), new Dollar(10));
         assertEquals(five.times(3), new Dollar(15));

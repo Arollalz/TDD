@@ -3,15 +3,15 @@
  */
 public class Franc extends Money {
     public Franc(int amount) {
-        this.setAmount(amount);
-    }
-
-    public Franc times(int multiplier){
-        return new Franc(this.getAmount() * multiplier);
+        super(amount);
     }
 
     public int getAmount() {
         return amount;
+    }
+
+    public Franc times(int multiplier){
+        return new Franc(this.getAmount() * multiplier);
     }
 }
 
